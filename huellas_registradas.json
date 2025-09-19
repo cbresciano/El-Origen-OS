@@ -2,8 +2,8 @@
   {
     "timestamp": "2025-09-17T01:30:02.263236+00:00",
     "titulo": "The New World of Measurable Philosophy",
-    "idea_sobrepasada": "No se detectó un operador emergente",
-    "operador_emergente": "No se detectó un operador emergente",
+    "idea_sobrepasada": "No se detect\u00f3 un operador emergente",
+    "operador_emergente": "No se detect\u00f3 un operador emergente",
     "indice_negentropia": 8.527,
     "entropia_semantica": 7.209,
     "conceptos_clave": [
@@ -80,8 +80,9 @@
     ],
     "archivo_md": "C:\\TestdeHuella\\the_new_world_of_measurable_philosophy.md",
     "ipfs_cid": "QmS9DDXrZW7CjrccFGbEdLDZuyTHFhyv6yKykALFEAGpva",
-    "estado_ipfs": "Pendiente",
+    "estado_ipfs": "Distribuido",
     "ethereum_tx": "No anclado",
-    "hash_articulo": "5c770af1321c2444891406aa9afcbc6cd50b9e062b8ba149b0058cb87326e369"
+    "hash_articulo": "5c770af1321c2444891406aa9afcbc6cd50b9e062b8ba149b0058cb87326e369",
+    "github_commit": "Acto de Origen: Se completa el registro de 'The New World of Measurable Philosophy'"
   }
 ]
