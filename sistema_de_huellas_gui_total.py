@@ -1,7 +1,3 @@
-Aquí tienes el código completo y corregido. He implementado la solución que te di antes y he hecho algunas optimizaciones adicionales para mejorar el rendimiento y la legibilidad.
-
-Python
-
 import tkinter as tk
 from tkinter import messagebox
 from datetime import datetime, timezone
@@ -9,25 +5,17 @@ import pathlib
 import math
 from collections import Counter
 import subprocess
-import requests
 import json
-import time
-import networkx as nx
-import matplotlib.pyplot as plt
-from web3 import Web3
-import os
-from dotenv import load_dotenv
 import re
 import hashlib
 import base64
+import os
+from dotenv import load_dotenv
 
-# --- Cargar credenciales ---
+# --- Cargar credenciales desde .env ---
 load_dotenv()
-PRIVATE_KEY = os.getenv("PRIVATE_KEY")
-PUBLIC_ADDRESS = os.getenv("PUBLIC_ADDRESS")
-INFURA_URL = os.getenv("INFURA_URL")
-INFURA_IPFS_PROJECT_ID = os.getenv("INFURA_IPFS_PROJECT_ID")
-INFURA_IPFS_API_SECRET = os.getenv("INFURA_IPFS_API_SECRET")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+REPO_URL = os.getenv("REPO_URL")
 
 # --- Generador de nombre de archivo desde título ---
 def generar_nombre_archivo(titulo):
@@ -65,7 +53,7 @@ def convertir_a_md(texto, titulo="Artículo sin título"):
         
     return archivo.absolute()
 
-# --- Medidor de negentropía semántica —
+# --- Medidor de negentropía semántica ---
 def calcular_negentropia(texto):
     palabras = [p.lower() for p in re.findall(r'\b\w+\b', texto) if len(p) > 2]
     total_palabras = len(palabras)
@@ -99,67 +87,31 @@ def detectar_operador(texto):
         "operador_emergente": "No se detectó un operador emergente"
     }
 
-# --- Subida a IPFS a través de la API de Infura ---
-def subir_a_ipfs(ruta_md):
-    INFURA_IPFS_URL = "https://ipfs.infura.io:5001/api/v0/add"
-    
-    if not INFURA_IPFS_PROJECT_ID or not INFURA_IPFS_API_SECRET:
-        messagebox.showerror("Error de credenciales", "Faltan las claves de la API de Infura en tu archivo .env.")
-        return None
+# --- Anclaje en GitHub ---
+def anclar_en_github(commit_message):
+    if not GITHUB_TOKEN or not REPO_URL:
+        messagebox.showerror("Error de credenciales", "Faltan las claves de GitHub en el archivo .env.")
+        return False, "Faltan credenciales"
 
     try:
-        auth_string = f"{INFURA_IPFS_PROJECT_ID}:{INFURA_IPFS_API_SECRET}"
-        auth_bytes = auth_string.encode("utf-8")
-        auth_base64 = base64.b64encode(auth_bytes).decode("utf-8")
-        
-        headers = {
-            "Authorization": f"Basic {auth_base64}"
-        }
+        # Configurar la URL del repositorio con el token para la autenticación
+        repo_url_with_token = REPO_URL.replace("https://", f"https://{GITHUB_TOKEN}@")
 
-        with open(ruta_md, 'rb') as f:
-            files = {'file': f}
-            response = requests.post(INFURA_IPFS_URL, headers=headers, files=files)
-            response.raise_for_status()
-            cid = response.json()['Hash']
-            print(f"✅ Archivo subido a Infura con éxito. CID: {cid}")
-            return cid
-            
-    except requests.exceptions.RequestException as e:
-        messagebox.showerror("Error de conexión a Infura", f"No se pudo subir a Infura. Verifica tu conexión y tus claves API.\n{e}")
-        return None
-    except Exception as e:
-        messagebox.showerror("Error de subida a Infura", f"Ocurrió un error inesperado al subir a Infura.\n{e}")
-        return None
-
-# --- Anclaje en Ethereum ---
-def anclar_en_ethereum(cid):
-    if not INFURA_URL or not PRIVATE_KEY or not PUBLIC_ADDRESS:
-        messagebox.showwarning("Faltan credenciales", "No se puede anclar sin credenciales de Ethereum.")
-        return None
-    
-    try:
-        w3 = Web3(Web3.HTTPProvider(INFURA_URL))
-        if not w3.is_connected():
-            raise ConnectionError("No se pudo conectar a la red de Ethereum.")
+        # Añadir todos los archivos modificados
+        subprocess.run(["git", "add", "."], check=True)
+        # Hacer el commit
+        subprocess.run(["git", "commit", "-m", commit_message], check=True)
+        # Sincronizar con el repositorio remoto
+        subprocess.run(["git", "push", repo_url_with_token], check=True)
         
-        nonce = w3.eth.get_transaction_count(PUBLIC_ADDRESS)
-        tx = {
-            'nonce': nonce,
-            'to': Web3.to_checksum_address(PUBLIC_ADDRESS),
-            'value': 0,
-            'gas': 200000,
-            'gasPrice': w3.to_wei('30', 'gwei'),
-            'data': Web3.to_hex(text=cid)  # LINEA CORREGIDA
-        }
-        signed_tx = w3.eth.account.sign_transaction(tx, PRIVATE_KEY)
-        tx_hash = w3.eth.send_raw_transaction(signed_tx.raw_transaction)
-        return w3.to_hex(tx_hash)
+        return True, "Registro en GitHub exitoso."
+    except subprocess.CalledProcessError as e:
+        return False, f"Error al ejecutar comandos de Git: {e.stderr.decode('utf-8') if e.stderr else e}"
     except Exception as e:
-        messagebox.showerror("Error Ethereum", f"No se pudo anclar la huella.\n{e}")
-        return None
+        return False, f"Ocurrió un error inesperado: {e}"
 
 # --- Registro de huella con verificación de unicidad ---
-def registrar_huella(titulo, texto, ruta_md, neg_data, sem_data, cid, tx_hash):
+def registrar_huella(titulo, texto, ruta_md, neg_data, sem_data, commit_msg):
     huella_data = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "titulo": titulo,
@@ -169,9 +121,7 @@ def registrar_huella(titulo, texto, ruta_md, neg_data, sem_data, cid, tx_hash):
         "entropia_semantica": neg_data["entropia_semantica"],
         "conceptos_clave": neg_data["conceptos_clave"],
         "archivo_md": str(ruta_md),
-        "ipfs_cid": cid or "Error",
-        "estado_ipfs": "Distribuido" if cid else "Pendiente",
-        "ethereum_tx": tx_hash or "No anclado"
+        "github_commit": commit_msg or "No anclado"
     }
 
     archivo = pathlib.Path("huellas_registradas.json")
@@ -194,58 +144,6 @@ def registrar_huella(titulo, texto, ruta_md, neg_data, sem_data, cid, tx_hash):
         
     return huella_data
 
-# --- Visualización como grafo con título abreviado ---
-def visualizar_grafo():
-    archivo = pathlib.Path("huellas_registradas.json")
-    if not archivo.exists():
-        messagebox.showinfo("Sin datos", "No hay huellas registradas aún.")
-        return
-    with archivo.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-    G = nx.DiGraph()
-    
-    for h in data:
-        titulo = h["titulo"]
-        etiqueta = titulo if len(titulo) < 40 else titulo[:37] + "..."
-        negentropia = h["indice_negentropia"]
-        
-        G.add_node(etiqueta, negentropia=negentropia)
-        
-        for otro in data:
-            if h != otro and h["operador_emergente"] == otro["operador_emergente"] and h["operador_emergente"] != "No se detectó un operador emergente":
-                otro_titulo = otro["titulo"]
-                otro_etiqueta = otro_titulo if len(otro_titulo) < 40 else otro_titulo[:37] + "..."
-                G.add_edge(etiqueta, otro_etiqueta)
-
-    if not G.nodes:
-        messagebox.showinfo("Sin nodos", "No hay suficientes datos para generar el grafo.")
-        return
-
-    pos = nx.spring_layout(G, k=0.8, iterations=50)
-    negentropias = [G.nodes[n].get("negentropia", 0) for n in G.nodes]
-    
-    plt.figure(figsize=(10, 8))
-    nx.draw_networkx(
-        G, pos,
-        with_labels=True,
-        node_color=negentropias,
-        cmap=plt.cm.plasma,
-        node_size=1000,
-        font_size=8,
-        font_color="white",
-        edge_color="#333",
-        arrowstyle='-|>',
-        arrowsize=15
-    )
-    
-    sm = plt.cm.ScalarMappable(cmap=plt.cm.plasma, norm=plt.Normalize(vmin=min(negentropias), vmax=max(negentropias)))
-    sm.set_array([])
-    plt.colorbar(sm, label="Índice de Negentropía (ΔS)")
-    
-    plt.title("Grafo de Huellas Estructurales")
-    plt.axis("off")
-    plt.show()
-
 # --- GUI principal ---
 def procesar_texto():
     try:
@@ -259,30 +157,30 @@ def procesar_texto():
         ruta_md = convertir_a_md(texto, titulo)
         neg_data = calcular_negentropia(texto)
         sem_data = detectar_operador(texto)
-        cid = subir_a_ipfs(ruta_md)
-        tx_hash = anclar_en_ethereum(cid) if cid else None
         
-        huella_registrada = registrar_huella(titulo, texto, ruta_md, neg_data, sem_data, cid, tx_hash)
+        commit_msg = f"Acto de Origen: Registro de '{titulo}'"
+        success, error_msg = anclar_en_github(commit_msg)
 
-        if huella_registrada:
-            resultado = f"""
+        if success:
+            huella_registrada = registrar_huella(titulo, texto, ruta_md, neg_data, sem_data, commit_msg)
+            if huella_registrada:
+                resultado = f"""
 ✅ Huella registrada
 📄 Título: {huella_registrada['titulo']}
 📉 Entropía semántica: {huella_registrada['entropia_semantica']}
 📈 Índice de negentropía (ΔS): {huella_registrada['indice_negentropia']}
 🧠 Operador emergente: {huella_registrada['operador_emergente']}
 🧨 Idea sobrepasada: {huella_registrada['idea_sobrepasada']}
-📡 CID IPFS: {huella_registrada['ipfs_cid']}
-🔗 Estado IPFS: {huella_registrada['estado_ipfs']}
-🧬 Ethereum TX: {huella_registrada['ethereum_tx']}
+🔗 Commit de GitHub: {huella_registrada['github_commit']}
 """
-            campo_resultado.config(state="normal")
-            campo_resultado.delete("1.0", tk.END)
-            campo_resultado.insert(tk.END, resultado)
-            campo_resultado.config(state="disabled")
+                campo_resultado.config(state="normal")
+                campo_resultado.delete("1.0", tk.END)
+                campo_resultado.insert(tk.END, resultado)
+                campo_resultado.config(state="disabled")
+                messagebox.showinfo("Proceso Completo", "La huella estructural ha sido registrada exitosamente en GitHub.")
+        else:
+            messagebox.showerror("Error al registrar", f"No se pudo registrar en GitHub.\n{error_msg}")
             
-            messagebox.showinfo("Proceso Completo", "La huella estructural ha sido registrada exitosamente.")
-        
     except Exception as e:
         messagebox.showerror("Error General", f"Ocurrió un error inesperado: {e}")
 
@@ -303,7 +201,5 @@ tk.Button(ventana, text="Metabolizar y registrar huella", command=procesar_texto
 tk.Label(ventana, text="Resultado de la huella:").pack()
 campo_resultado = tk.Text(ventana, height=15, width=80, state="disabled")
 campo_resultado.pack()
-
-tk.Button(ventana, text="Visualizar grafo de huellas", command=visualizar_grafo).pack(pady=10)
 
 ventana.mainloop()
