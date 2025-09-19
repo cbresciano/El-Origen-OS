@@ -1,0 +1,30 @@
+import json
+
+def registrar_huella_structural(delta_S, hash_entropia, palabra, hash_origen, delta_cognitivo, energia):
+    huella = {
+        "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "hash_entropia": hash_entropia,
+        "delta_S": delta_S,
+        "ruptura": palabra,
+        "hash_origen": hash_origen,
+        "delta_cognitivo": round(delta_cognitivo, 4),
+        "energia": round(energia, 2e-27),
+        "veredicto": (
+            "origen confirmado" if delta_S > 0 else
+            "poesía pura" if hash_origen else
+            "nada ocurrió"
+        )
+    }
+
+    try:
+        with open("huellas.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        data = []
+
+    data.append(huella)
+
+    with open("huellas.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print("\n🗂️ Huella estructural registrada en huellas.json")
