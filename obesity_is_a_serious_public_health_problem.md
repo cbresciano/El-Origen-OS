@@ -1,5 +1,5 @@
 # Obesity is a serious public health problem
-*Publicado: 2025-09-20T01:09:09.056030+00:00*
+*Publicado: 2025-09-20T01:12:04.134239+00:00*
 ---
 
 === ORIGIN OS v1.0 ===
@@ -8,13 +8,13 @@
 
 Write or paste the ENTROPIC thought you will ELIMINATE:
 
-> Obesity is a serious public health problem
+> The city is full of trash
 
-ΔS = -4.20e-26 J/K
+ΔS = -2.50e-26 J/K
 
 ORIGIN: you measurably reduced chaos.
 
-ACT SIGNED: 78687479ffbf48cd
+ACT SIGNED: db7e483f0e63b244
 
 ## 3. Bifurcation
 
@@ -22,9 +22,9 @@ Base phrase: 'The future is the statistical prolongation of the past.'
 
 Add the word/symbol that emerges FROM within (not deduced):
 
-> Stop thinking that thinness is weakness and dangerous
+> Eating on recyclable trays
 
-BIFURCATION DOCUMENTED: 8e7b3bd4280d6403
+BIFURCATION DOCUMENTED: 0caa9aaf8cc5c4e6
 
 ## 4. Verdict
 
@@ -32,11 +32,11 @@ BIFURCATION DOCUMENTED: 8e7b3bd4280d6403
 
 You reduced chaos and broke the chain.
 
-Hashes: 78687479ffbf48cd | 8e7b3bd4280d6403
+Hashes: db7e483f0e63b244 | 0caa9aaf8cc5c4e6
 
 The act is IRREVERSIBLE and MEASURABLE.
 
-Proof saved: 8e7b3bd4280d6403.cert
+Proof saved: 0caa9aaf8cc5c4e6.cert
 
 Files generated:
 
@@ -46,6 +46,6 @@ Files generated:
 
 - bifurcation.log
 
-- 8e7b3bd4280d6403.cert
+- 0caa9aaf8cc5c4e6.cert
 
 ---
