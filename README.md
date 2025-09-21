@@ -1,9 +1,11 @@
 For the Hurried Reader
-"The Origin" The whole book in one gulp
+
+##"The Origin" The whole book in one gulp##
 
 By Claudio Bresciano
 
 Core Ideas
+
 Universe = Gradient Engine
 Reality is not a place but a thermodynamic motor running on the gap between order and chaos. Consciousness is the cheapest, fastest work this engine can extract.
 
