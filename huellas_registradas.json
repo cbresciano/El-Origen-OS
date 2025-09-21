@@ -497,5 +497,32 @@
     "archivo_md": "C:\\Huellaslimpias\\El-Origen-OS\\obesity_is_a_serious_public_health_problem.md",
     "github_commit": "Acto de Origen: Registro de 'Obesity is a serious public health problem'",
     "hash_articulo": "9dac138d9523a04149de358a1cc905f04ad137169fbbd23e603150fbf48f7eb0"
+  },
+  {
+    "timestamp": "2025-09-20T01:19:27.196096+00:00",
+    "titulo": "Obesity is a serious public health problem",
+    "idea_sobrepasada": "No se detectó un operador emergente",
+    "operador_emergente": "No se detectó un operador emergente",
+    "indice_negentropia": 2.146,
+    "entropia_semantica": 5.523,
+    "conceptos_clave": [
+      "origin",
+      "entropy",
+      "the",
+      "you",
+      "and",
+      "reduced",
+      "chaos",
+      "act",
+      "c46e83b419bf2f93",
+      "bifurcation",
+      "irreversible",
+      "e3a5ca6fe78a09d2",
+      "cert",
+      "log"
+    ],
+    "archivo_md": "C:\\Huellaslimpias\\El-Origen-OS\\obesity_is_a_serious_public_health_problem.md",
+    "github_commit": "Acto de Origen: Registro de 'Obesity is a serious public health problem'",
+    "hash_articulo": "32554ccc2060c2a5b7ab44d0b9d97c1af807983c25901c5ead05ca58d97f05c1"
   }
 ]
