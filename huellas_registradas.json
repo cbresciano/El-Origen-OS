@@ -881,5 +881,13 @@
     "directorio_relativo": "traces\\2025-09-26_children_of_the_stars",
     "indice_negentropia": 14.907,
     "entropia_semantica": 7.519
+  },
+  {
+    "timestamp": "2025-09-27T15:30:47.769797+00:00",
+    "titulo_principal": "What does it mean to think in the age of AI?",
+    "hash_articulo": "965f26e6e50441ab406f5ff0fd224e41714584228188f9909c01b92f420daf84",
+    "directorio_relativo": "traces\\2025-09-27_what_does_it_mean_to_think_in_the_age_of_ai",
+    "indice_negentropia": 8.599,
+    "entropia_semantica": 7.024
   }
 ]
