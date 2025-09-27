@@ -873,5 +873,13 @@
     "directorio_relativo": "traces\\2025-09-26_children_of_the_stars",
     "indice_negentropia": 13.789,
     "entropia_semantica": 7.557
+  },
+  {
+    "timestamp": "2025-09-26T23:35:07.101654+00:00",
+    "titulo_principal": "Children of the Stars",
+    "hash_articulo": "015e6cdbe813820c49c7f568e9f3f08066721e825cd64cbb834c35276f508b04",
+    "directorio_relativo": "traces\\2025-09-26_children_of_the_stars",
+    "indice_negentropia": 14.907,
+    "entropia_semantica": 7.519
   }
 ]
