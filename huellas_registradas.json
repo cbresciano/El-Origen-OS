@@ -889,5 +889,13 @@
     "directorio_relativo": "traces\\2025-09-27_what_does_it_mean_to_think_in_the_age_of_ai",
     "indice_negentropia": 8.599,
     "entropia_semantica": 7.024
+  },
+  {
+    "timestamp": "2025-09-27T15:51:46.719067+00:00",
+    "titulo_principal": "From the Bicycle to the Algorithmic Unconscious",
+    "hash_articulo": "15748c3604da66afa803672c5ddbd64fa8fbc2c5114cdee1f247dfcede29602f",
+    "directorio_relativo": "traces\\2025-09-27_from_the_bicycle_to_the_algorithmic_unconscious",
+    "indice_negentropia": 15.769,
+    "entropia_semantica": 8.132
   }
 ]
