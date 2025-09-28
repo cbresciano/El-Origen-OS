@@ -897,5 +897,13 @@
     "directorio_relativo": "traces\\2025-09-27_from_the_bicycle_to_the_algorithmic_unconscious",
     "indice_negentropia": 15.769,
     "entropia_semantica": 8.132
+  },
+  {
+    "timestamp": "2025-09-28T16:26:45.674311+00:00",
+    "titulo_principal": "Causal Minimalism",
+    "hash_articulo": "93595f6f609849b541d79c0d2e520876ccad25810d0295ce0e4e46cd03f75e20",
+    "directorio_relativo": "traces\\2025-09-28_causal_minimalism",
+    "indice_negentropia": 11.699,
+    "entropia_semantica": 7.377
   }
 ]
