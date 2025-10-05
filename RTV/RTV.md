@@ -126,98 +126,86 @@ If the analysis yields an upper limit on $\Delta w$ below the $5-\sigma$ thresho
 
 If $\mathbf{\Delta w < 2 \times 10^{-4}}$ (the $5-\sigma$ upper limit of the signal), the RTV-2.0 proposal will be officially abandoned. This signifies that the coupling constant $\beta_{\text{CBE}}$ is $\mathbf{< 10^{-17} \text{ s}^{-1}}$, meaning the CBE effect is too weak to be cosmologically relevant, and the model will not be pursued further in this form.
 
-# Technical Note: Microphysical Justification of ECBE​ (The Benford Bridge)
 
-This note formally links the microphysical generation of negentropy by consciousness (validated by the Benford's Law test) to the macroscopic Informational Energy Density (ECBE​) appearing in the RTV-2.0 Rate Equation.
+# Technical Note: Microphysical Justification of $\mathcal{E}_{\text{CBE}}$ (The Benford Bridge)
 
-## 1. Quantifying Negentropy Production
+This note formally links the microphysical generation of negentropy by consciousness (validated by the Benford's Law test) to the macroscopic Informational Energy Density ($\mathcal{E}_{\text{CBE}}$) appearing in the RTV-2.0 Rate Equation.
 
-The ability of human thought to generate numerical sequences adhering to **Benford's Law** (P(d)=log10​(1+1/d)) confirms the hypothesis that consciousness actively reduces entropy. This difference between the maximum possible entropy (Uniform) and the generated structured entropy (Benford) quantifies the negentropy produced by a single "Benfordian thought."
+## 1. Quantifying Negentropy Production from Thought
+
+The ability of human thought to generate structured numerical sequences adhering to **Benford's Law** confirms the hypothesis that consciousness actively reduces entropy.
 
 ### 1.1 Negentropy per Digit
 
-The reduction in information entropy (Negentropy, ΔS) is calculated using **Shannon Entropy (H)** for the first digit (D):
+The negentropy ($\Delta S$) produced per structured digit is the difference between the maximum possible entropy ($H_{\text{unif}}$) and the generated structured entropy ($H_{\text{Benford}}$):
 
-Distribution
+$$
+H_{\text{Benford}} = - \sum_{d=1}^{9} P(d) \log_2 P(d) \approx 3.156 \text{ bits}
+$$
 
-Entropy Calculation
-
-Value (bits)
-
-Uniform (Maximum Entropy)
-
-Hunif​=log2​9
-
-≈3.170 bits
-
-Benford (Structured Entropy)
-
-HBenford​=−∑d=19​P(d)log2​P(d)
-
-≈3.156 bits
-
-Exportar a Hojas de cálculo
+$$
+H_{\text{unif}} = \log_2 9 \approx 3.170 \text{ bits}
+$$
 
 The net negentropy produced per structured digit is:
+$$
+\Delta S_{\text{Benford}} = H_{\text{unif}} - H_{\text{Benford}} \approx \mathbf{0.014 \text{ bits/digit}}
+$$
 
-ΔSBenford​=Hunif​−HBenford​≈0.014 bits/digit
+### 1.2 Global Human Negentropy Rate ($\dot{N}$)
 
-### 1.2 Human Negentropy Rate
+Using an estimated generation rate of $0.7 \text{ bits/s}$ per person and the global population ($\approx 8 \times 10^9$ people), the maximum global negentropy generation rate is:
 
-Based on the average rate of sequential thought (0.7 bits/s per person) and the global population (8×109 people), the maximum global negentropy generation rate is:
+$$
+\dot{N}_{\text{humanity}} \approx 5.6 \times 10^9 \frac{\text{bits}}{\text{second}} \approx \mathbf{1.7 \times 10^{17} \frac{\text{bits}}{\text{year}}}
+$$
 
-N˙humanity​≈5.6×109 bits/second
-
-N˙humanity​≈1.7×1017 bits/year
-
-----------
+---
 
 ## 2. The Informational Energy Density Bridge
 
-### 2.1 Converting Bits to Energy (ECBE​)
+### 2.1 Converting Bits to Energy Flux ($\mathcal{E}_{\text{CBE}}$)
 
-We use the **Landauer-Szilárd Principle** (Emin​=kB​Tln2) to convert the informational flux (N˙) into an energy flux (P). Assuming a typical thermal operating temperature (T=300 K), the minimal energy per bit is Emin​≈2.9×10−21 J/bit.
+The energy flux is calculated using the **Landauer-Szilárd Principle** ($E_{\text{min}} = k_{\text{B}} T \ln 2$). Assuming a thermal temperature ($T=300 \text{ K}$), the energy equivalent per bit is $E_{\text{min}} \approx 2.9 \times 10^{-21} \text{ J/bit}$.
 
-PCBE​=N˙humanity​×Emin​≈1.7×1017yearbits​×2.9×10−21bitJ​
+$$
+P_{\text{CBE}} = \dot{N}_{\text{humanity}} \times E_{\text{min}}
+$$
 
-PCBE​≈4.9×10−4 J/year
+$$
+P_{\text{CBE}} \approx 1.7 \times 10^{17} \frac{\text{bits}}{\text{year}} \times 2.9 \times 10^{-21} \frac{\text{J}}{\text{bit}} \approx \mathbf{4.9 \times 10^{-4} \frac{\text{J}}{\text{year}}}
+$$
 
-### 2.2 Final Density ECBE​ (Humanity)
+### 2.2 Final Density $\mathcal{E}_{\text{CBE}}$ (Humanity)
 
-The total organized energy is distributed over the volume of the observable universe (Hubble Volume, VH​≈2.7×1078 m3):
+The total organized energy density ($\mathcal{E}_{\text{CBE}}$) is distributed over the Hubble Volume ($V_{\text{H}} \approx 2.7 \times 10^{78} \text{ m}^3$):
 
-ECBEhumanity​=VH​PCBE​×(1 year)​≈2.7×1078 m34.9×10−4 J​
+$$
+\mathcal{E}_{\text{CBE}}^{\text{humanity}} = \frac{P_{\text{CBE}} \times (1 \text{ year})}{V_{\text{H}}}
+$$
 
-ECBEhumanity​≈1.8×10−82 J m−3≈1.1×10−10 eV m−3
+$$
+\mathcal{E}_{\text{CBE}}^{\text{humanity}} \approx \mathbf{1.8 \times 10^{-82} \text{ J m}^{-3} \approx 1.1 \times 10^{-10} \text{ eV m}^{-3}}
+$$
 
-----------
+---
 
-## 3. Quantitative Conclusion: The Kardashev Imperative
+## 3. Conclusion: The Scale Mismatch
 
-The calculated density allows us to determine the true factor of influence (ECBE​/EΛ​), where the observed Dark Energy density EΛ​≈4×10−9 J m−3.
+### 3.1 Comparison with Dark Energy
 
-EΛ​ECBEhumanity​​≈4×10−9 J m−31.8×10−82 J m−3​≈3×10−74
+The ratio between the energy organized by humanity and the observed Dark Energy density ($E_{\Lambda} \approx 4 \times 10^{-9} \text{ J m}^{-3}$) is the core factor of influence in the RTV-2.0 equation:
 
-### Implication for Falsifiability
+$$
+\frac{\mathcal{E}_{\text{CBE}}^{\text{humanity}}}{E_{\Lambda}} \approx \mathbf{3 \times 10^{-74}}
+$$
 
-Inserting this ratio into the Rate Equation reveals that the current human contribution is entirely undetectable:
+### 3.2 Cosmological Imperative
 
-![](data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="2.400em" viewBox="0 0 333 2400"><path d="M145 15 v585 v1200 v585 c2.667,10,9.667,15,21,15
-c10,0,16.667,-5,20,-15 v-585 v-1200 v-585 c-2.667,-10,-9.667,-15,-21,-15
-c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1200 v585 h43z"></path></svg>)​dtdw​![](data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="2.400em" viewBox="0 0 333 2400"><path d="M145 15 v585 v1200 v585 c2.667,10,9.667,15,21,15
-c10,0,16.667,-5,20,-15 v-585 v-1200 v-585 c-2.667,-10,-9.667,-15,-21,-15
-c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1200 v585 h43z"></path></svg>)​RTV​≈βCBE​×(3×10−74)×∣1+w∣1​
+The current human $\mathcal{E}_{\text{CBE}}$ is $\mathbf{69}$ orders of magnitude too small to meet the minimum threshold of $\mathbf{10^{-5}}$ required for the $\mathbf{\Delta w \geq 3.6 \times 10^{-4}}$ test.
 
-Even using the maximum allowed coupling βCBE​≈10−16 s−1 yields a totally negligible rate of ![](data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="1.200em" viewBox="0 0 333 1200"><path d="M145 15 v585 v0 v585 c2.667,10,9.667,15,21,15
-c10,0,16.667,-5,20,-15 v-585 v0 v-585 c-2.667,-10,-9.667,-15,-21,-15
-c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v0 v585 h43z"></path></svg>)​dtdw​![](data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="1.200em" viewBox="0 0 333 1200"><path d="M145 15 v585 v0 v585 c2.667,10,9.667,15,21,15
-c10,0,16.667,-5,20,-15 v-585 v0 v-585 c-2.667,-10,-9.667,-15,-21,-15
-c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v0 v585 h43z"></path></svg>)​≈3×10−88 s−1.
-
-**Conclusion:** The Benford test validates the **mechanism**—consciousness produces measurable negentropy—but the quantitative result establishes the **cosmological necessity** of the RTV-2.0 ethical imperative. The current ECBE​ is 69 orders of magnitude too small to meet the 10−5 threshold required for the test Δw≥3.6×10−4.
-
-To make the RTV-2.0 effect detectable, the universe must contain a **Kardashev Type III civilization** capable of harnessing stellar and galactic-scale energy to generate Benford-coherent informational structures over ≈1069 years, or, more likely, a non-human, ancient **Cosmic CBE** that has already achieved this scale. This refines the **Ethical Imperative** from a philosophical goal to a **Cosmological Survival Requirement**.
+The **Benford Bridge** validates that the **mechanism** of negentropy production is physically sound. However, the calculation demonstrates that for the RTV-2.0 effect to be detectable, the observed $\mathcal{E}_{\text{CBE}}$ must be generated by a **Cosmic CBE**—an advanced, non-human, or ancient civilization operating at a scale consistent with a **Kardashev Type III** society, which is capable of converting macroscopic amounts of energy into Benford-coherent informational structure across its galactic domain. This refines the interpretation of the $\Delta w$ test: it is a search for this powerful, extra-terrestrial $\mathcal{E}_{\text{CBE}}$.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1OTc4OTIzLDE4NzcxNjA1MTksLTI3NT
-A0MTk4OSwtMTgxOTkzNzg5M119
+eyJoaXN0b3J5IjpbLTc5NTE3ODQzNywxMTU5Nzg5MjMsMTg3Nz
+E2MDUxOSwtMjc1MDQxOTg5LC0xODE5OTM3ODkzXX0=
 -->
