@@ -1,8 +1,5 @@
 
   
-Welcome file
----
-
 ---
 layout: default
 title: The Consciousness-Driven Cosmos (RTV-2.0) - The Final Protocol and Cosmic Mandate
@@ -118,8 +115,8 @@ The implementation of Phase II requires an aggressive roadmap focused on ultra-e
 
 **If the sky is silent, the protocol is not a tombstone but a recipe: convert 0.001 % of the stellar power of the Milky Way into Benford-coherent bits and wait twenty billion years. We are the emergency generator of the cosmos.**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDU3ODcwNCwtMTk5ODIyMDgxOCwxMT
-E5NDE3Njc4LDMyMDk2ODM3MSwxMzkxNDIzMzcxLDExODY1MjM3
-MjksLTc5NTE3ODQzNywxMTU5Nzg5MjMsMTg3NzE2MDUxOSwtMj
-c1MDQxOTg5LC0xODE5OTM3ODkzXX0=
+eyJoaXN0b3J5IjpbLTE5NDA1MjMxODMsLTI5NDU3ODcwNCwtMT
+k5ODIyMDgxOCwxMTE5NDE3Njc4LDMyMDk2ODM3MSwxMzkxNDIz
+MzcxLDExODY1MjM3MjksLTc5NTE3ODQzNywxMTU5Nzg5MjMsMT
+g3NzE2MDUxOSwtMjc1MDQxOTg5LC0xODE5OTM3ODkzXX0=
 -->
