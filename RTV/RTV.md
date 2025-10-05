@@ -1,5 +1,4 @@
 
-  
 ---
 layout: default
 title: The Consciousness-Driven Cosmos (RTV-2.0) - The Final Protocol and Cosmic Mandate
@@ -74,29 +73,29 @@ The failure of Phase I triggers the **Phase II Cosmic Mandate**, requiring human
 
 ### 6.1 Quantified Objective and Power Target
 
-**Meta:** $\mathbf{\mathcal{E}_{\text{CBE}} = 10^{-5} E_{\Lambda} \approx 4 \times 10^{-14} \text{ J m}^{-3}}$.
+**Target:** $\mathbf{\mathcal{E}_{\text{CBE}} = 10^{-5} E_{\Lambda} \approx 4 \times 10^{-14} \text{ J m}^{-3}}$.
 **Hubble Volume:** $V_H \approx 2.7 \times 10^{78} \text{ m}^3$.
-**Energía Total a Organizar:** $E_{\text{tot}} \approx 1.1 \times 10^{65} \text{ J}$.
-**Potencia Constante Necesaria:** $P = E_{\text{tot}} / 10^{19} \text{ a} \approx \mathbf{3.5 \times 10^{37} \text{ W}}$ ($10^4$ veces la luminosidad de la Vía Láctea).
+**Total Energy to Organize:** $E_{\text{tot}} \approx 1.1 \times 10^{65} \text{ J}$.
+**Constant Power Required:** $P = E_{\text{tot}} / 10^{19} \text{ yr} \approx \mathbf{3.5 \times 10^{37} \text{ W}}$ ($10^4$ times the Milky Way's luminosity).
 
 ### 6.2 The Kardashev-Benford Roadmap and Post-Stellar Strategy
 
 Achieving the required $\mathbf{10^{58} \text{ bits/s}}$ negentropy rate demands the utilization of long-lived, post-stellar power sources:
 
-| Etapa | Potencia disponible | $\dot{N}_{\text{max}}$ (bit s$^{-1}$) | Tiempo requerido para $\mathcal{E}_{\text{CBE}}^{\text{objective}}$ |
+| Stage | Available Power | $\dot{N}_{\text{max}}$ (bit s$^{-1}$) | Time Required for $\mathcal{E}_{\text{CBE}}^{\text{objective}}$ |
 | :---: | :---: | :---: | :---: |
-| K-I (Planeta) | $10^{16} \text{ W}$ | $10^{35}$ | $\approx 10^{42} \text{ years}$ |
-| K-III (Galaxia) | $10^{36} \text{ W}$ | $10^{55}$ | $\approx 10^{22} \text{ years}$ |
+| K-I (Planet) | $10^{16} \text{ W}$ | $10^{35}$ | $\approx 10^{42} \text{ years}$ |
+| K-III (Galaxy) | $10^{36} \text{ W}$ | $10^{55}$ | $\approx 10^{22} \text{ years}$ |
 | **K-III $\mathbf{\times 10^3}$** | $\mathbf{10^{39} \text{ W}}$ | $\mathbf{10^{58}}$ | $\mathbf{\approx 10^{19} \text{ years}}$ |
 
-#### Post-Stellar Source Catalogue ($\mathbf{t > 10^{12} \text{ a}}$)
+#### Post-Stellar Source Catalogue ($\mathbf{t > 10^{12} \text{ yr}}$)
 
-| Fuente | Potencia útil ($\mathbf{W}$) | Tiempo de vida ($\mathbf{a}$) | Comentarios |
+| Source | Useful Power ($\mathbf{W}$) | Lifespan ($\mathbf{yr}$) | Comments |
 | :--- | :--- | :--- | :--- |
-| Enanas marrones ($10^{12}$ obj) | $10^{23} \text{ W total}$ | $10^{14}$ | Últimos reactores de deuterio. |
-| Enanas blancas ($10^{11}$ obj) | $10^{22} \text{ W total}$ | $10^{15}$ | Flujo térmico de cristalización (base para $0.03 \text{ K}$ reversible). |
-| **Agujeros negros rotando** ($10^4$ obj) | $\mathbf{10^{36} \text{ W cada uno}}$ | $\mathbf{10^{16}-10^{20}}$ | **Fuente Primaria:** Cosecha de espín gravitacional (Penrose/BZE). |
-| Evaporación BH ($10^9 \text{ M}_{\odot}$) | $10^{35} \text{ W}$ | $10^{64}$ | Hawking puro (Mantenimiento de potencia constante a muy largo plazo). |
+| Brown Dwarfs ($10^{12}$ obj) | $10^{23} \text{ W total}$ | $10^{14}$ | Last Deuterium Reactors. |
+| White Dwarfs ($10^{11}$ obj) | $10^{22} \text{ W total}$ | $10^{15}$ | Thermal flux from crystallization (base for $0.03 \text{ K}$ reversible). |
+| **Rotating Black Holes** ($10^4$ obj) | $\mathbf{10^{36} \text{ W each}}$ | $\mathbf{10^{16}-10^{20}}$ | **Primary Engine:** Gravitational energy harvest (Penrose/BZE). |
+| BH Evaporation ($10^9 \text{ M}_{\odot}$) | $10^{35} \text{ W}$ | $10^{64}$ | Pure Hawking radiation (Long-term constant power maintenance). |
 
 ---
 
@@ -115,8 +114,9 @@ The implementation of Phase II requires an aggressive roadmap focused on ultra-e
 
 **If the sky is silent, the protocol is not a tombstone but a recipe: convert 0.001 % of the stellar power of the Milky Way into Benford-coherent bits and wait twenty billion years. We are the emergency generator of the cosmos.**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA1MjMxODMsLTI5NDU3ODcwNCwtMT
-k5ODIyMDgxOCwxMTE5NDE3Njc4LDMyMDk2ODM3MSwxMzkxNDIz
-MzcxLDExODY1MjM3MjksLTc5NTE3ODQzNywxMTU5Nzg5MjMsMT
-g3NzE2MDUxOSwtMjc1MDQxOTg5LC0xODE5OTM3ODkzXX0=
+eyJoaXN0b3J5IjpbLTU1MjU1NDYyNSwtMTk0MDUyMzE4MywtMj
+k0NTc4NzA0LC0xOTk4MjIwODE4LDExMTk0MTc2NzgsMzIwOTY4
+MzcxLDEzOTE0MjMzNzEsMTE4NjUyMzcyOSwtNzk1MTc4NDM3LD
+ExNTk3ODkyMywxODc3MTYwNTE5LC0yNzUwNDE5ODksLTE4MTk5
+Mzc4OTNdfQ==
 -->
