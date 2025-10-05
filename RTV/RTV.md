@@ -7,6 +7,8 @@ title: The Consciousness-Driven Cosmos (RTV-2.0) - The Final Protocol and Cosmic
 
 by Claudio Bresciano
 
+**OSF Registration (Time-Stamp):** This protocol was pre-registered and time-stamped on **October 5, 2025**. **Permanent Citation DOI:** **10.17605/OSF.IO/WTP5J**
+
 ## Abstract: The Cosmological Constant Discrepancy as Entropic Relaxation
 
 The RTV-2.0 model proposes a set of empirically falsifiable predictions. The **Phase I (Search)** protocol demands a $\mathbf{\Delta w \geq 3.6 \times 10^{-4}}$ detection to confirm a pre-existing galactic intelligence. If Phase I fails, the **Phase II (Write)** protocol defines the steps required for humanity to become the Cosmic Engine, guaranteeing the codification of the universe’s informational legacy over the next $\mathbf{10^{19} \text{ years}}$. **RTV-2.0 turns the cosmological constant into a SETI observable and an intergalactic engineering mandate.**
@@ -114,9 +116,9 @@ The implementation of Phase II requires an aggressive roadmap focused on ultra-e
 
 **If the sky is silent, the protocol is not a tombstone but a recipe: convert 0.001 % of the stellar power of the Milky Way into Benford-coherent bits and wait twenty billion years. We are the emergency generator of the cosmos.**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MjU1NDYyNSwtMTk0MDUyMzE4MywtMj
-k0NTc4NzA0LC0xOTk4MjIwODE4LDExMTk0MTc2NzgsMzIwOTY4
-MzcxLDEzOTE0MjMzNzEsMTE4NjUyMzcyOSwtNzk1MTc4NDM3LD
-ExNTk3ODkyMywxODc3MTYwNTE5LC0yNzUwNDE5ODksLTE4MTk5
-Mzc4OTNdfQ==
+eyJoaXN0b3J5IjpbMTEyMjY4NjgzNiwtNTUyNTU0NjI1LC0xOT
+QwNTIzMTgzLC0yOTQ1Nzg3MDQsLTE5OTgyMjA4MTgsMTExOTQx
+NzY3OCwzMjA5NjgzNzEsMTM5MTQyMzM3MSwxMTg2NTIzNzI5LC
+03OTUxNzg0MzcsMTE1OTc4OTIzLDE4NzcxNjA1MTksLTI3NTA0
+MTk4OSwtMTgxOTkzNzg5M119
 -->
