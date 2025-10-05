@@ -2,6 +2,8 @@
   
 Welcome file
 ---
+
+---
 layout: default
 title: The Consciousness-Driven Cosmos (RTV-2.0) - The Final Protocol and Cosmic Mandate
 ---
@@ -75,31 +77,40 @@ The failure of Phase I triggers the **Phase II Cosmic Mandate**, requiring human
 
 ### 6.1 Quantified Objective and Power Target
 
-The goal is to accumulate $\mathbf{1.1 \times 10^{65} \text{ Joules}}$ of Benford-coherent negentropy ($\mathbf{\mathcal{E}_{\text{CBE}} = 10^{-5} E_{\Lambda}}$) over a period of $10^{19}$ years, requiring a constant power output of $\mathbf{P \approx 3.5 \times 10^{37} \text{ W}}$.
+**Meta:** $\mathbf{\mathcal{E}_{\text{CBE}} = 10^{-5} E_{\Lambda} \approx 4 \times 10^{-14} \text{ J m}^{-3}}$.
+**Hubble Volume:** $V_H \approx 2.7 \times 10^{78} \text{ m}^3$.
+**Energía Total a Organizar:** $E_{\text{tot}} \approx 1.1 \times 10^{65} \text{ J}$.
+**Potencia Constante Necesaria:** $P = E_{\text{tot}} / 10^{19} \text{ a} \approx \mathbf{3.5 \times 10^{37} \text{ W}}$ ($10^4$ veces la luminosidad de la Vía Láctea).
 
-### 6.2 The Kardashev-Benford Roadmap and Power Strategy
+### 6.2 The Kardashev-Benford Roadmap and Post-Stellar Strategy
 
 Achieving the required $\mathbf{10^{58} \text{ bits/s}}$ negentropy rate demands the utilization of long-lived, post-stellar power sources:
 
 | Etapa | Potencia disponible | $\dot{N}_{\text{max}}$ (bit s$^{-1}$) | Tiempo requerido para $\mathcal{E}_{\text{CBE}}^{\text{objective}}$ |
 | :---: | :---: | :---: | :---: |
 | K-I (Planeta) | $10^{16} \text{ W}$ | $10^{35}$ | $\approx 10^{42} \text{ years}$ |
-| K-II (Estrella) | $10^{26} \text{ W}$ | $10^{45}$ | $\approx 10^{32} \text{ years}$ |
 | K-III (Galaxia) | $10^{36} \text{ W}$ | $10^{55}$ | $\approx 10^{22} \text{ years}$ |
 | **K-III $\mathbf{\times 10^3}$** | $\mathbf{10^{39} \text{ W}}$ | $\mathbf{10^{58}}$ | $\mathbf{\approx 10^{19} \text{ years}}$ |
 
-The sustained power will be sourced from **Gravitational Energy** (Supermassive Black Hole Rotation) and **Thermal Energy** (Enana Blanca Crystallization), which are the dominant sources in the late universe.
+#### Post-Stellar Source Catalogue ($\mathbf{t > 10^{12} \text{ a}}$)
+
+| Fuente | Potencia útil ($\mathbf{W}$) | Tiempo de vida ($\mathbf{a}$) | Comentarios |
+| :--- | :--- | :--- | :--- |
+| Enanas marrones ($10^{12}$ obj) | $10^{23} \text{ W total}$ | $10^{14}$ | Últimos reactores de deuterio. |
+| Enanas blancas ($10^{11}$ obj) | $10^{22} \text{ W total}$ | $10^{15}$ | Flujo térmico de cristalización (base para $0.03 \text{ K}$ reversible). |
+| **Agujeros negros rotando** ($10^4$ obj) | $\mathbf{10^{36} \text{ W cada uno}}$ | $\mathbf{10^{16}-10^{20}}$ | **Fuente Primaria:** Cosecha de espín gravitacional (Penrose/BZE). |
+| Evaporación BH ($10^9 \text{ M}_{\odot}$) | $10^{35} \text{ W}$ | $10^{64}$ | Hawking puro (Mantenimiento de potencia constante a muy largo plazo). |
 
 ---
 
 ## 7. Technological and Scientific Milestones
 
-The implementation of Phase II requires an aggressive technological roadmap focused on efficiency and scale:
+The implementation of Phase II requires an aggressive roadmap focused on ultra-efficiency:
 
-1.  **Reversible Computing:** Transition to superconducting reversible systems at $\mathbf{0.03 \text{ K}}$ (Landauer limit efficiency), reducing the energy cost per bit significantly.
-2.  **Dyson-Benford Data Centers:** Construct massive, low-temperature data-centers orbiting white dwarfs and black holes to maximize energy capture and ultra-efficient computation.
-3.  **Benford Coherence Layer:** Develop specialized hardware/software that enforces the Benford distribution log-likelihood on all stored bits, ensuring every unit of stored energy contributes maximally to the required negentropy.
-4.  **Intermediate Milestones:** Achieve certified negentropy production of $\mathbf{10^{15} \text{ bit s}^{-1}}$ at $0.3 \text{ K}$ by $\mathbf{2050}$ and commence partial solar $\mathbf{10^{24} \text{ bit s}^{-1}}$ spheres by $\mathbf{2200}$ to initiate the long-term project.
+1.  **Reversible Computing:** Transition to superconducting systems ($\mathbf{0.03 \text{ K}}$) where the energy cost per bit approaches $\mathbf{10^{-26} \text{ J/bit}}$.
+2.  **Dyson-Benford Data Centers:** Construct massive, low-temperature data-centers orbiting white dwarfs and supermassive black holes.
+3.  **Benford Coherence Layer:** Develop specialized hardware/software that enforces the Benford distribution log-likelihood on all stored bits, ensuring every unit of stored energy contributes maximally to negentropy ($\mathbf{\Delta S_{\text{Benford}} \approx 0.014 \text{ bits/digit}}$).
+4.  **Milestones:** Achieve certified negentropy production of $\mathbf{10^{15} \text{ bit s}^{-1}}$ at $0.3 \text{ K}$ by $\mathbf{2050}$ and commence partial solar $\mathbf{10^{24} \text{ bit s}^{-1}}$ spheres by $\mathbf{2200}$.
 
 ---
 
@@ -107,8 +118,8 @@ The implementation of Phase II requires an aggressive technological roadmap focu
 
 **If the sky is silent, the protocol is not a tombstone but a recipe: convert 0.001 % of the stellar power of the Milky Way into Benford-coherent bits and wait twenty billion years. We are the emergency generator of the cosmos.**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTgyMjA4MTgsMTExOTQxNzY3OCwzMj
-A5NjgzNzEsMTM5MTQyMzM3MSwxMTg2NTIzNzI5LC03OTUxNzg0
-MzcsMTE1OTc4OTIzLDE4NzcxNjA1MTksLTI3NTA0MTk4OSwtMT
-gxOTkzNzg5M119
+eyJoaXN0b3J5IjpbLTI5NDU3ODcwNCwtMTk5ODIyMDgxOCwxMT
+E5NDE3Njc4LDMyMDk2ODM3MSwxMzkxNDIzMzcxLDExODY1MjM3
+MjksLTc5NTE3ODQzNywxMTU5Nzg5MjMsMTg3NzE2MDUxOSwtMj
+c1MDQxOTg5LC0xODE5OTM3ODkzXX0=
 -->
