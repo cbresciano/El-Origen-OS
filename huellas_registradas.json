@@ -905,5 +905,13 @@
     "directorio_relativo": "traces\\2025-09-28_causal_minimalism",
     "indice_negentropia": 11.699,
     "entropia_semantica": 7.377
+  },
+  {
+    "timestamp": "2025-09-28T19:38:31.857446+00:00",
+    "titulo_principal": "Lymbic Hijack",
+    "hash_articulo": "9015331feba0da14ca9dda8d8796b24ad92b4d2baa1ad45967a4d07873853c8c",
+    "directorio_relativo": "traces\\2025-09-28_lymbic_hijack",
+    "indice_negentropia": 15.437,
+    "entropia_semantica": 7.81
   }
 ]
