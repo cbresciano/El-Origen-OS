@@ -913,5 +913,13 @@
     "directorio_relativo": "traces\\2025-09-28_lymbic_hijack",
     "indice_negentropia": 15.437,
     "entropia_semantica": 7.81
+  },
+  {
+    "timestamp": "2025-10-17T02:24:32.530275+00:00",
+    "titulo_principal": "THE ORIGINAL META-AXIOM (OMA) MANIFESTO",
+    "hash_articulo": "3789ceff39057ca17edf986a17c633da065c8a24a47179327cf339639ae3c329",
+    "directorio_relativo": "traces\\2025-10-16_the_original_meta_axiom_oma_manifesto",
+    "indice_negentropia": 10.623,
+    "entropia_semantica": 6.907
   }
 ]
